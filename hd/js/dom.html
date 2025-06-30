@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>what is RAM?</h1>
+    <button onclick="right()">(i)RANDOM ACCESS MEMORY</button>
+    <button onclick="wrong()">(ii)RANDOM ALLOW MEMORY</button>
+    <p id="right" style="color:green;"></p>
+    <p id="Wrong" style="color:red;"><p>
+    <script>
+        function right() {
+            // window.alert("Right");
+            document.getElementById("right").innerHTML="This is Right Answer :)";
+            
+        }
+        function wrong() {
+            // window.alert("Wrong");
+            document.getElementById("Wrong").innerHTML="This is wrong Answer :(";
+        }
+    </script>
+</body>
+
+</html>

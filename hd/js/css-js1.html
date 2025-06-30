@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form onsubmit="return wap()">
+Mobile <br><br>
+<input type="number" name="mobile"  id="mo" />
+<br><br>
+Re enter mobile<br><br>
+<input type="number" name="mobile"  id="rmo" />
+<br><br>
+<input type="submit" value="login">
+</form>
+<p id="result"></p>
+<script>
+    function wap(){
+        var x=document.getElementById("mo").value;
+        var y=document.getElementById("rmo").value;
+        var z= x == y && x ? "Match Success":"Match Failed";
+        document.getElementById("result").innerHTML = z;
+        return false;   
+    }
+</script>
+    
+</body>
+</html>
